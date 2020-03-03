@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divid"></div>
+    <script>
+    var mobil = [ "avanza" , "Ertiga" , "inova" , "kijang"]
+    mobil[3]="BMW";
+    console.log(mobil[2]);
+    document.getElementById('divid').innerHTML = mobil[3] + "<br>" + mobil[1]
+    + "<br>" + "jumlah data yang terdapat pada array mobil : " + mobil.length;
+    </script>
+    <div id="data"></div>
+    <div id="data2"></div>
+    <script>
+    var mobil2 = ["Agya" , "Fortuner" , "Mercedes" , "Ferari" , "Lamborgini" , "Pajero"];
+    var mobilPertama = mobil2[0];
+    var mobilTerakhir = mobil2[mobil2.length - 1];
+    document.getElementById("data").innerHTML = "data mobil pertama adalah : "+mobilPertama;
+    document.getElementById("data2").innerHTML = "data mobil terakhir adalah : "+mobilTerakhir;
+    </script>
+    <div id="data3"></div>
+    <script>
+    var mbl = ["Toyota","Suzuki","Honda","Yamaha"];
+    mbl.pop();
+    document.getElementById("data3").innerHTML = mbl;
+    </script>
+    <br>
+    <br>
+    <!-- menggabungkan dua array atau lebih -->
+    <div id="mbl4"></div>
+    <script>
+    var mbl10 = ["Toyota","Suzuki","Honda","Yamaha"];
+    var mbl20 = ["Agya" , "Fortuner" , "Mercedes" , "Ferari" , "Lamborgini" , "Pajero"];
+    var mbl30 = [ "avanza" , "Ertiga" , "inova" , "kijang"];
+    var allmbl = mbl10.concat(mbl20,mbl30);
+    document.getElementById("mbl4").innerHTML = allmbl;
+    </script>
+    <!-- memasukan data kedalam arrat -->
+    <div id="mbl1"></div>
+    <script>
+    var mbl12 = ["Toyota","Suzuki","Honda","Yamaha"];
+    mbl12.push("Ferari");
+    console.log(" Beberapa mobil yang telah kami data antara lain : "+mbl12.join(" * "));
+    </script>
+    <br>
+    <!-- interai data dari array dengan for -->
+    <div id="for"></div>
+    <script>
+    var mbl01 = ["Agya" , "Fortuner" , "Mercedes" , "Ferari" , "Lamborgini" , "Pajero"];
+    var teks, a;
+    teks = "<ul>";
+    for(a=0 ; a < mbl01.length ; a++)
+    {
+        teks += "<li>"+mbl01[a]+"</li>";
+    }
+    teks += "</ul>";
+    document.getElementById("for").innerHTML = teks;
+    </script>
+    <!-- interasi menggunakan metode map -->
+    <div id="map"></div>
+    <script>
+    var nomor1 = [4, 9, 16, 25];
+    var nomor2 = nomor1.map(kaliDua);
+
+    function kaliDua(value,index,array) {
+        return value * 2;
+    }
+    document.getElementById("map").innerHTML = nomor2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="data"></div>
+    <div id="data2"></div>
+    <script>
+    fungsiMobil();
+    function fungsiMobil() 
+    {
+        var namaMobil = "Ertiga";
+        document.getElementById("data").innerHTML = 'pemanggilan didalam fungsi : '+namaMobil;
+    }
+    document.getElementById("data2").innerHTML = 'panggilan diluar fungsi : '+namaMobil; 
+    </script>
+</body>
+</html>

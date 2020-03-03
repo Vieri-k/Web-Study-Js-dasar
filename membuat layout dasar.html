@@ -1,0 +1,166 @@
+    <!DOCTYPE html>
+<style type="text/css">
+    .container{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .header{
+        background-color:white;
+        min-height: 50px;
+        text-align: center;
+    }
+    .content{
+        background-color: #ddd;
+        min-height: 500px;
+    }
+    .footer{
+        background-color: #ccc;
+        min-height: 50px;
+        text-align: center;
+    }
+    img{
+        width: 50px;
+        height: 100px;
+    }
+    .menu ul{
+        padding: 0;
+    }
+    .menu ul li{
+        display: inline-block;
+        position:relative;
+    }
+    .menu ul li a{
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    .thumbnail{
+        background-color: white;
+        text-align: center;
+        padding:  10px;
+        width: 225px;
+        margin: 10px;
+        float: left;
+    }
+    .thumbnail img{
+        width: 100%;
+        height: 100%;
+    }
+    .content{
+        overflow: auto;
+    }
+    ul.submenu{
+        background-color: #eee;
+        border: 1px solid #eee;
+        text-align: left;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        display: none;
+    }
+    ul.submenu li{
+        display: block;
+        padding: 5px 10px;
+    }
+    .menu ul li:hover ul.submenu{
+        display: block;
+    }
+    .jumbotron{
+        width: 100%;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        background-color: #aaa;
+        background-image: url(wp3105346.jpg);
+        background-size: cover;
+        position: relative;
+        }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+    }
+    .jumbotron h2,
+    .jumbotron p{
+        position: relative;
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Membuat layout dasar</title>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1>Logo Produk</h1>
+        <div class="logo">
+            <img src="logocssfloat.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">About</a>
+                <ul class="submenu">
+                    <li><a href="http://">CV</a></li>
+                    <li><a href="http://">Education</a></li>
+                    <li><a href="http://">Portofolio</a></li>
+                </ul>
+                </li>
+                <li><a href="http://">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="overlay"></div>
+        <h2>welcome to my homepage</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni architecto natus veniam. Neque, voluptatem hic possimus, ex id error nesciunt odio distinctio expedita pariatur dolorum recusandae adipisci praesentium unde explicabo!</p>
+    </div>
+    <div class="content">
+        <div class="content">
+            <h2>My Products</h2>
+            <div class="thumbnail">
+                <img src="imrs.jfif" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="imrs.jfif" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="imrs.jfif" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="imrs.jfif" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="imrs.jfif" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="imrs.jfif" alt="">
+                <h2>Product 2</h2>
+                <p>Rp 250.000</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h1>copyright 2018 my page</h1>
+    </div>
+    </div>
+</body>
+</html>

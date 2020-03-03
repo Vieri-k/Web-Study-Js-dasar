@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<style>
+    .margin{
+        background:cadetblue;
+        width: 160px;
+        height: 160px;
+        margin: 20px auto;
+        border: dotted;
+    }
+    .margin1{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        margin: 20px 50px 30px 25px;
+        border: dashed;
+    }
+    .padding{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        padding: 20px 50px 30px 25px;
+        border: solid;
+    }
+    .boxSizing{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        padding: 40px;
+    }
+    .borderBox{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .overflow_visible{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .overflow_auto{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        padding: 40px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+    .scrool{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        padding: 40px;
+        box-sizing: border-box;
+        overflow: scroll;
+    }
+    .hidden{
+        background: cornflowerblue;
+        width: 160px;
+        height: 160px;
+        padding: 40px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model dan Overflow</title>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <td>
+                <h1>Margin</h1>
+                <p class="margin">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+                <h2>border dotted</h2>
+            </td>
+            <td>
+                <h1>Margin1</h1>
+                <p class="margin1">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+                <h2>border dashed</h2>
+            </td>
+            <td>
+                <h1>Padding</h1>
+                <p class="padding">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+                <h2>border solid</h2>
+            </td>
+            <td>
+                <h1>box sizing</h1>
+                <p class="boxSizing">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+            </td>
+            <td>
+                <h1>border box</h1>
+                <p class="borderBox">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+            </td>
+        </tr>      
+        <tr>
+            <td>
+                <h1>Overflow Visible</h1>
+                <p class="overflow_visible">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+            </td>
+            <td>
+                <h1>Overflow Auto</h1>
+                <p class="overflow_auto">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+            </td>
+            <td>
+                <h1>Scrool</h1>
+                <p class="scrool">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+            </td>
+            <td>
+                <h1>Hidden</h1>
+                <p class="hidden">Vieri Kurniawan Imam Santoso, Tangerang, Banten</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
